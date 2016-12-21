@@ -15,4 +15,18 @@ describe "Juego batalla Naval" do
 		tablero.consultarBarco(2).should == 1
 	end
 
+	it "Disparo al agua" do
+
+		tablero = Tablero.new
+		tablero.agregarBarco 2		
+		tablero.disparo("a").should == "a"
+	end
+
+	it "Disparo al barco" do
+
+		tablero = Tablero.new
+		tablero.agregarBarco 2		
+		tablero.disparo("c").should == "h"
+	end
+
 end
