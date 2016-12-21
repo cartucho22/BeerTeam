@@ -3,6 +3,7 @@ class Tablero
 	def initialize 
 	   @matriz = [0,0,0,0]
 	   @barcos = 0
+	   @ejex = 0
 	   @resultado = ""
 	end
 
@@ -20,7 +21,6 @@ class Tablero
 	end
 
 	def disparo valor
-	   @ejex
 	case valor
 	when "a"
 	   @ejex = 0
