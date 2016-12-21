@@ -7,7 +7,6 @@ get '/' do
 end
 post '/disparo' do
     letra = params["letra"]
-    numero = params["numero"]
-    @resultado = @@tablero.disparo(letra,numero)
+    @resultado = @@tablero.disparo(letra)
     erb :Batalla
 end

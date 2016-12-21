@@ -7,9 +7,8 @@ Then(/^debo ver "(.*?)"$/) do |titulo|
 end
 
 
-When(/^ingreso Letra "(.*?)"$/) do |letra||numero| 
+When(/^ingreso Letra "(.*?)"$/) do |letra|
    fill_in("letra", :with => letra)	
-   fill_in("numero", :with => numero)
    click_button("Play")
 end
 
