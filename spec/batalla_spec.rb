@@ -19,14 +19,14 @@ describe "Juego batalla Naval" do
 
 		tablero = Tablero.new
 		tablero.agregarBarco 2		
-		tablero.disparo("a").should == "a"
+		tablero.disparo("a").should == "Agua"
 	end
 
 	it "Disparo al barco" do
 
 		tablero = Tablero.new
 		tablero.agregarBarco 2		
-		tablero.disparo("c").should == "h"
+		tablero.disparo("c").should == "Hundido"
 	end
 
 end

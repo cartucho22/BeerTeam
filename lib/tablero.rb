@@ -21,7 +21,7 @@ class Tablero
 	end
 
 	def disparo valor
-	case valor
+	case valor.downcase
 	when "a"
 	   @ejex = 0
 	when "b"
@@ -32,9 +32,9 @@ class Tablero
 	   @ejex = 3
 	end
 	   if @matriz[@ejex] == 1
-		@resultado = "h"
+		@resultado = "Hundido"
 	   else
-		@resultado = "a"
+		@resultado = "Agua"
 	   end
 	@resultado
 	end
