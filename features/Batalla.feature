@@ -6,6 +6,10 @@ Scenario: Pantalla con Titulo
 Scenario: Ingreso Letra A y obtengo Agua
 	Given voy a la pantalla
 	When ingreso Letra "A"
-	Then debo ver "a"
+	Then debo ver "Agua"
+Scenario: Ingreso Letra c y obtengo Barco
+	Given voy a la pantalla
+	When ingreso Letra "B"
+	Then debo ver "Hundido"
 
 
