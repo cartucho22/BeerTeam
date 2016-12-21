@@ -8,6 +8,15 @@ class Tablero
 	   1
 	end
 
+	def agregarBarco valor
+	   @matriz[valor] = 1
+	end
+
+	def consultarBarco valor
+	   @matriz[valor]
+	end
+
+
 end
 
 

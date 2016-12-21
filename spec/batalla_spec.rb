@@ -8,5 +8,11 @@ describe "Juego batalla Naval" do
 		
 	end
 
+	it "Ubicar un barco" do
+
+		tablero = Tablero.new
+		tablero.agregarBarco 2		
+		tablero.consultarBarco(2).should == 1
+	end
 
 end
