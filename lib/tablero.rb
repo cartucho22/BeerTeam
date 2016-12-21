@@ -3,6 +3,7 @@ class Tablero
 	def initialize 
 	   @matriz = [0,0,0,0]
 	   @barcos = 0
+	   @resultado = ""
 	end
 
 	def filas
@@ -31,10 +32,11 @@ class Tablero
 	   @ejex = 3
 	end
 	   if @matriz[@ejex] == 1
-		"h"
+		@resultado = "h"
 	   else
-		"a"
+		@resultado = "a"
 	   end
+	@resultado
 	end
 
 
