@@ -11,22 +11,22 @@ describe "Juego batalla Naval" do
 	it "Ubicar un barco" do
 
 		tablero = Tablero.new
-		tablero.agregarBarco 2		
-		tablero.consultarBarco(2).should == 1
+		tablero.agregarBarco("c",1)		
+		tablero.consultarBarco("c",1).should == 1
 	end
 
 	it "Disparo al agua" do
 
 		tablero = Tablero.new
-		tablero.agregarBarco 2		
-		tablero.disparo("a").should == "Agua"
+		tablero.agregarBarco("c",1)	
+		tablero.disparo("a",1).should == "Agua"
 	end
 
 	it "Disparo al barco" do
 
 		tablero = Tablero.new
-		tablero.agregarBarco 2		
-		tablero.disparo("c").should == "Hundido"
+		tablero.agregarBarco("c",1)		
+		tablero.disparo("c",1).should == "Hundido"
 	end
 
 end
