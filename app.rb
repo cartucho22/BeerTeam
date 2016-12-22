@@ -3,6 +3,7 @@ require_relative "./lib/tablero.rb"
 get '/' do
 	@@tablero = Tablero.new
         @@tablero.agregarBarco("C",1)
+	@@tablero.agregarBarco("A",4)
 	@vidas = @@tablero.consultarVidas
         @barcos = @@tablero.barcosrestantes
     	erb :Batalla
