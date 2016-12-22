@@ -16,6 +16,10 @@ class Tablero
 	   @vidas
 	end
 
+	def consultarBarcos
+	   @barcos
+	end
+
 	def agregarBarco x, y
 		case x.downcase
 		when "a"
@@ -58,6 +62,7 @@ class Tablero
 		end
 	   if @matriz[@ejex][y-1] == 1
 		@resultado = "Hundido"
+		@barcos -= 1
 	   else
 		@resultado = "Agua"
 		@vidas -= 1

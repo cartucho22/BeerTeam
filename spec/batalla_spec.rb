@@ -37,4 +37,12 @@ describe "Juego batalla Naval" do
 		tablero.consultarVidas.should == 3
 	end
 
+	it "Descontar un barco" do
+
+		tablero = Tablero.new
+		tablero.agregarBarco("c",1)		
+		tablero.disparo("c",1).should == "Hundido"
+		tablero.consultarBarcos.should == 0
+	end
+
 end
