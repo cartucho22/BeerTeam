@@ -20,6 +20,7 @@ Scenario: pifia 4
 Scenario: gana juego
 	Given voy a la pantalla
 	When ingreso Letra "C", 1
+	And ingreso Letra "A", 4
 	Then debo ver "Ganaste el Juego"
 
 
