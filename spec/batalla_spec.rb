@@ -42,7 +42,7 @@ describe "Juego batalla Naval" do
 		tablero = Tablero.new
 		tablero.agregarBarco("c",1)		
 		tablero.disparo("c",1).should == "Hundido"
-		tablero.consultarBarcos.should == 0
+		tablero.barcosrestantes.should == 0
 	end
 
 end

@@ -16,7 +16,7 @@ class Tablero
 	   @vidas
 	end
 
-	def consultarBarcos
+	def barcosrestantes
 	   @barcos
 	end
 
