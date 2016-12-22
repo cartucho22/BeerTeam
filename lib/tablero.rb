@@ -2,6 +2,7 @@ class Tablero
 
 	def initialize 
 	   @matriz = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+	   @matrizDisparos = [["#ffffff","#ffffff","#ffffff","#ffffff"],["#ffffff","#ffffff","#ffffff","#ffffff"],["#ffffff","#ffffff","#ffffff","#ffffff"],["#ffffff","#ffffff","#ffffff","#ffffff"]]
 	   @barcos = 0
 	   @ejex = 0
 	   @resultado = ""
@@ -14,6 +15,10 @@ class Tablero
 
 	def consultarVidas
 	   @vidas
+	end
+
+	def consultarMatrizDisparos
+	   @matrizDisparos
 	end
 
 	def barcosrestantes
@@ -61,9 +66,11 @@ class Tablero
 		   @ejex = 3
 		end
 	   if @matriz[@ejex][y-1] == 1
+		@matrizDisparos[@ejex][y-1] = "#ff0000"
 		@resultado = "Hundido"
 		@barcos -= 1
 	   else
+		@matrizDisparos[@ejex][y-1] = "#99ccff"
 		@resultado = "Agua"
 		@vidas -= 1
 	   end
