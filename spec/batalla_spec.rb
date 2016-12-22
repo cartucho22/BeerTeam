@@ -20,7 +20,7 @@ describe "Juego batalla Naval" do
 		tablero = Tablero.new
 		tablero.agregarBarco("c",1)	
 		tablero.disparo("a",1).should == "Agua"
-		tablero.consultarMatrizDisparos[0][0].should == "#99ccff"
+		tablero.consultarMatrizDisparos(0,0).should == "#99ccff"
 	end
 
 	it "Disparo al barco" do
@@ -28,7 +28,7 @@ describe "Juego batalla Naval" do
 		tablero = Tablero.new
 		tablero.agregarBarco("c",1)		
 		tablero.disparo("c",1).should == "Hundido"
-		tablero.consultarMatrizDisparos[2][0].should == "#ff0000"
+		tablero.consultarMatrizDisparos(2,0).should == "#ff0000"
 	end
 
 	it "Descontar una vida" do

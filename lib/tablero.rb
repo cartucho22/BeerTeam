@@ -17,8 +17,8 @@ class Tablero
 	   @vidas
 	end
 
-	def consultarMatrizDisparos
-	   @matrizDisparos
+	def consultarMatrizDisparos x, y
+	   @matrizDisparos[x][y]
 	end
 
 	def barcosrestantes
