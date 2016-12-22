@@ -7,6 +7,7 @@ class Tablero
 	   @ejex = 0
 	   @resultado = ""
 	   @vidas = 4
+	   @color = ""
 	end
 
 	def filas
@@ -23,10 +24,11 @@ class Tablero
 
 	def consultarMatrizBarcos x, y
 	   if @matrizBarcos[x][y] == 1
-		"#ff0000"
+		@color = "#ff0000"
 	   else
-		"#99ccff"
+		@color = "#99ccff"
 	   end
+	   @color
 	end
 
 	def barcosrestantes
