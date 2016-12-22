@@ -15,12 +15,12 @@ Scenario: pifia 4
 	And ingreso Letra "A", 2
 	And ingreso Letra "B", 2
 	And ingreso Letra "C", 2
-	Then debo ver "Fin Juego"
+	Then debo ver "FIN DEL JUEGO.. PERDISTE"
 
 Scenario: gana juego
 	Given voy a la pantalla
 	When ingreso Letra "C", 1
 	And ingreso Letra "A", 4
-	Then debo ver "Ganaste el Juego"
+	Then debo ver "GANASTE EL JUEGO"
 
 

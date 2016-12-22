@@ -1,8 +1,23 @@
-<h1>Batalla Naval</h1>
-
-<h1>Ganaste el Juego</h1>
-
-<table border="1" name="tablero">
+<table width="100%" height="250px" cellspacing="1px" border="1px">
+   <tr height="40px">
+      <td colspan="2px">
+         <table title="Banner" border="0">
+            <tr align="center">
+               <td> <h1 >Batalla Naval</h1></td>
+	
+            </tr>
+         </table>
+      </td>
+   </tr>
+   <tr height="200px">
+      <td>
+         <h1>GANASTE EL JUEGO</h1>
+	 <img src="team-beer.png">
+      </td>
+      <td>
+         <table title="Contenido" border="0" width="400px">
+            <tr>
+               <table border="1" name="tablero" ralign= "center">
  <caption>Tablero de Disparos</caption>
 <tr>
 <th id="1"></th>
@@ -40,3 +55,12 @@
        <td width = 100 height = 50 bgcolor=<%= @@tablero.consultarMatrizDisparos 3,3%> </td>
      </tr>
  </table> 
+<p>Resultado: <%= @resultado %></p>
+<p>Cantidad de Vidas: <%= @vidas %></p>
+<p>Barcos: <%= @barcos %></p>
+
+            </tr>
+         </table>
+     </td>
+  </tr>
+</table>

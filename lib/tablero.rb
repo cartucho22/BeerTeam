@@ -23,7 +23,7 @@ class Tablero
 	end
 
 	def consultarMatrizBarcos x, y
-	   if @matrizBarcos[x][y] == 1
+	   if @matriz[x][y] == 1
 		@color = "#ff0000"
 	   else
 		@color = "#99ccff"
