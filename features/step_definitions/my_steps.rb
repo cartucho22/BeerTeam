@@ -9,7 +9,7 @@ end
 When(/^ingreso Letra "(.*?)", (\d+)$/) do |letra, numero|
     fill_in("letra", :with => letra)
     fill_in("numero", :with => numero)	
-    click_button("Play")
+    click_button("Disparo")
 end
 
 

@@ -9,5 +9,10 @@ post '/disparo' do
     letra = params["letra"]
     numero = params["numero"].to_i
     @resultado = @@tablero.disparo(letra, numero)
-    erb :Batalla
+    @vidas = @@tablero.consultarVidas
+    if @vidas > 0
+	erb :Batalla
+    else
+        erb :Finjuego
+    end
 end
