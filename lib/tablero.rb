@@ -21,6 +21,14 @@ class Tablero
 	   @matrizDisparos[x][y]
 	end
 
+	def consultarMatrizBarcos x, y
+	   if @matrizBarcos[x][y] == 1
+		"#ff0000"
+	   else
+		"#99ccff"
+	   end
+	end
+
 	def barcosrestantes
 	   @barcos
 	end
