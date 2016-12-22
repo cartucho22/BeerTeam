@@ -1,15 +1,19 @@
 class Tablero
 
 	def initialize 
-	   #@matriz = [0,0,0,0][0,0,0,0]
 	   @matriz = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 	   @barcos = 0
 	   @ejex = 0
 	   @resultado = ""
+	   @vidas = 4
 	end
 
 	def filas
 	   1
+	end
+
+	def consultarVidas
+	   @vidas
 	end
 
 	def agregarBarco x, y
@@ -56,6 +60,7 @@ class Tablero
 		@resultado = "Hundido"
 	   else
 		@resultado = "Agua"
+		@vidas -= 1
 	   end
 	   @resultado
 	end
